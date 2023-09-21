@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Menu - Editor</title>
+    <!-- ファイル読み込み -->
+    <link rel="stylesheet" href="style/main.css">
+    <script src="script/main.js"></script>
+    <!-- ==== favicon設定 ==== -->
+    <link rel="icon" href="https://axtech.dev/img/logo.svg">
+    <!-- ==== OGP設定 ==== -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="score editor">
+    <meta property="og:description" content="holorhysm score editor">
+    <meta property="og:image" content="https://axtech.dev/img/thumbnail.png">
+    <meta name="twitter:card" content="summary">
+</head>
+
+<body>
+    <header>
+        <a href="#home">
+            <p class="icon">&#xf015</p>
+            <p class="desc">Home</p>
+        </a>
+        <a href="#status">
+            <p class="icon">&#xf1de</p>
+            <p class="desc">Status</p>
+        </a>
+        <a href="#score">
+            <p class="icon">&#xf044</p>
+            <p class="desc">Score</p>
+        </a>
+    </header>
+    <main>
+        <section id="home">
+            <h1>holorhysm score editor</h1>
+            <div class="slot">
+                <p>Slot 1</p>
+                <button class="load" title="編集画面にロード">&#xf044</button>
+                <button class="copy" title="クリップボードに保存">&#xf0c7</button>
+                <button class="paste" title="クリップボードからインポート">&#xf56f</button>
+            </div>
+            <div class="slot">
+                <p>Slot 2</p>
+                <button class="load" title="編集画面にロード">&#xf044</button>
+                <button class="copy" title="クリップボードに保存">&#xf0c7</button>
+                <button class="paste" title="クリップボードからインポート">&#xf56f</button>
+            </div>
+            <div class="slot">
+                <p>Slot 3</p>
+                <button class="load" title="編集画面にロード">&#xf044</button>
+                <button class="copy" title="クリップボードに保存">&#xf0c7</button>
+                <button class="paste" title="クリップボードからインポート">&#xf56f</button>
+            </div>
+        </section>
+        <section id="status">
+            <h2>譜面情報</h2>
+            <form action="" method="get" class="status-form">
+                <div>
+                    <label for="status-name">楽曲名</label>
+                    <input id="status-name" type="text" />
+                </div>
+                <div>
+                    <label for="status-singer">歌唱者</label>
+                    <input id="status-singer" type="text" />
+                </div>
+                <div>
+                    <label for="status-composer">作詞, 作曲</label>
+                    <input id="status-composer" type="text" />
+                </div>
+                <div>
+                    <label for="status-notesDesigner">採譜者</label>
+                    <input id="status-notesDesigner" type="text" />
+                </div>
+                <div>
+                    <label for="status-tendency">譜面傾向ラベル</label>
+                    <input id="status-tendency" type="text" />
+                </div>
+                <div>
+                    <label for="status-diffDisplay">難易度表記</label>
+                    <input id="status-diffDisplay" type="text" />
+                </div>
+                <div>
+                    <label for="status-diffConst">難易度定数</label>
+                    <input id="status-diffConst" type="number" />
+                </div>
+                <div>
+                    <label for="status-bars">小節数</label>
+                    <input id="status-bars" type="number" />
+                </div>
+                <div>
+                    <label for="status-tempo">BPM関数</label>
+                    <input id="status-tempo" type="text" />
+                </div>
+                <div>
+                    <label for="status-beats">拍子関数</label>
+                    <input id="status-beats" type="text" />
+                </div>
+                <div>
+                    <label for="status-offset">オフセット秒数</label>
+                    <input id="status-offset" type="number" />
+                </div>
+                <div>
+                    <label for="status-youtube">Youtube ID</label>
+                    <input id="status-youtube" type="text" />
+                </div>
+            </form>
+        </section>
+        <section id="score">
+            <div></div>
+        </section>
+    </main>
+</body>
+
+</html>
