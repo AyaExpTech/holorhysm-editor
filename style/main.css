@@ -241,3 +241,85 @@ section#status {
         }
     }
 }
+
+/* =================================================================================
+    ステータス画面(譜面の情報)
+================================================================================== */
+
+section#score {
+    display: block grid;
+    grid-template-columns: 16rem 1fr;
+
+    &>.info {
+        &>form {
+            &>p {
+                text-align: center;
+
+                &>span.selecting::before {
+                    content: 'No.';
+                    font: 0.75rem/0.75rem 'M PLUS 1p';
+                    color: hsl(var(--theme) var(--s1) var(--l3));
+                }
+
+                &>span.sum {
+                    font: 0.75rem/0.75rem 'M PLUS 1p';
+                    color: hsl(var(--theme) var(--s1) var(--l3));
+
+                    &::before {
+                        content: ' / ';
+                    }
+
+                    &::after {
+                        content: ' notes';
+                    }
+                }
+            }
+
+            &>div {
+                width: 100%;
+                height: 2rem;
+                padding: 0.25rem 0;
+                margin: 0.25rem 0;
+                border-radius: 1rem;
+                background-color: hsl(var(--theme) var(--s0) var(--l1));
+                box-shadow: 0px 1px 4px -1px black;
+
+                &>label {
+                    display: block;
+                    text-align: center;
+                    width: 4rem;
+                    float: left;
+                }
+
+                &>input {
+                    height: 1.5rem;
+                    display: block;
+                    width: 11rem;
+                    margin: 0rem 0.5rem;
+                    padding: 0.25rem 0 0.25rem 0.5rem;
+                    overflow: hidden;
+                    font: 1rem/1rem 'M PLUS 1p';
+                    background-color: hsl(var(--theme) var(--s0) var(--l0));
+                    box-shadow: inset 0px 1px 4px -1px black;
+                    border-radius: 1rem;
+                }
+            }
+        }
+    }
+
+    &>.wrapper {
+        margin: 0.5rem;
+        border-radius: 1rem 1rem 0 0;
+        padding: 0.5rem;
+        background-color: black;
+        box-shadow: 0px 1px 4px -1px black;
+        overflow: scroll hidden;
+        scrollbar-width: thin;
+        scrollbar-color: hsl(var(--theme) var(--s0) var(--l1)) hsl(var(--theme) var(--s0) var(--l0));
+
+        &>canvas {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

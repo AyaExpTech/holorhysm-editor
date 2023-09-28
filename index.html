@@ -109,7 +109,21 @@
             </form>
         </section>
         <section id="score">
-            <div></div>
+            <div class="info">
+                <form>
+                    <p><span class="selecting">1234</span><span class="sum">9999</span></p>
+                    <div><label for="noteType">種類</label><input type="number" id="noteType"></div>
+                    <div><label for="noteLeft">左端</label><input type="number" id="noteLeft"></div>
+                    <div><label for="noteRight">右端</label><input type="number" id="noteRight"></div>
+                    <div><label for="noteBars">小節</label><input type="number" id="noteBars"></div>
+                    <div><label for="noteBasis">拍子</label><input type="number" id="noteBasis"></div>
+                    <div><label for="noteBeat">拍数</label><input type="number" id="noteBeat"></div>
+                    <div><label for="noteRatio">速度</label><input type="number" id="noteRatio"></div>
+                </form>
+            </div>
+            <div class="wrapper">
+                <canvas id="view"></canvas>
+            </div>
         </section>
     </main>
 </body>
