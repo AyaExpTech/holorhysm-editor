@@ -30,5 +30,11 @@ const Options = {
  * 画面リサイズ時、canvasの縦幅を自動的に設定
  */
 window.addEventListener("resize", event => {
-    $("#view").setAttribute("height", $("#view").clientHeight - 1);
+    $("#view").setAttribute("height", Math.floor($("#view").clientHeight));
 })
+
+/**
+ * 各種パーツを返してくれるmodule(canvas-parts.js)をインポート
+ * @type {PartsCanvas}
+ */
+import { PartsCanvas } from "script/canvas-parts.js";
